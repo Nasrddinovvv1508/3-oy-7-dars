@@ -125,7 +125,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.cards:last-child {
+.card2 {
     border-right: 1px solid rgba(40, 43, 34, 0.3);
 }
 
@@ -141,6 +141,7 @@ body {
 }
 
 .profession_card {
+    width: 384px;
     padding: 0px 30px;
     border-left: 1px solid rgba(40, 43, 34, 0.3);
 }
@@ -162,4 +163,220 @@ body {
     line-height: 100%; 
     margin-top: 60px;
     margin-bottom: 30px;
+}
+
+    /* Hero styles */
+.hero_background {
+    background:  #3D4A39;
+}
+
+.hero_section {
+    padding: 100px 71px 100px 133px;
+    margin-bottom: 100px;
+}
+
+.hero_section p {
+    text-align: center;
+    color:  #FFF;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; 
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.hero_card {
+    width: 278px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.hero_cards h3 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    opacity: 0.5;
+}
+
+.cards_part1, .cards_part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_cards {
+    /* width: 996px; */
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+    /* Media queries */
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 960px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profession_card {
+        width: 310px;
+        padding: 0px 20px;
+        border-left: 1px solid rgba(40, 43, 34, 0.3);
+    }
+    .profession_card:last-child {
+        /* border-right: 1px solid rgba(40, 43, 34, 0.3); */
+    }
+
+    .profession_card img {
+        width: 280px;
+        height: 320px;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    .container {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cards_secton h1 {
+        margin-bottom: 85px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profession_card {
+        width: 47%;
+    }
+
+    .profession_card img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .profession_card h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .cards_part1, .cards_part2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero_section p {
+        color: #FFF;
+        font-size: 36px;
+    }
+
+    .hero_card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero_card h3 {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+        opacity: 0.5;
+    }
+
+
+    @media screen and (max-width: 320px) {
+        .container {
+            max-width: 300px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .main_title h2 {
+            font-size: 28px;
+            width: 296px;
+        }
+
+        .main_title p {
+            font-size: 16px;
+            width: 300px;
+        }
+
+        .main_pages {
+            text-align: center;
+        }
+
+        .arrow_images img {
+            display: none;
+        }
+
+        .pages a {
+            text-align: center;
+        }
+
+        .cards_secton h1 {
+            width: 295px;
+            font-size: 28px;
+        }
+
+        .profession_card {
+            width: 95%;
+            border: none;
+        }
+    
+        .profession_card img {
+            width: 290px;
+            height: 320px;
+        }
+
+        .profession_card span {
+            font-size: 20px;
+            /* margin-top: 50px; */
+        }
+
+        .profession_card h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .cards_part1, .cards_part2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .hero_card {
+            width: 48%;
+        }
+
+        .hero_section p {
+            font-size: 24px;
+        }
+
+        .hero_card img {
+            width: 40px;
+        }
+
+        .hero_card h3 {
+            font-size: 18px;
+        }
+    }
+
 }
