@@ -7,7 +7,159 @@
 }
 
 body {
-    font-family: "Raleway";
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full_wrapper {
+    max-width: 1600px;
+    width: 100%;
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.20) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+    background-image: url(../img/main_img.png);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    /* Main styles */
+.main_container {
+    text-align: center;
+    padding: 120px 0px 45px 0px;
+}
+
+.main_title {
+    margin-bottom: 120px;
+}
+.main_title h2 {
+    /* width: 446px; */
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    text-transform: uppercase;
+}
+
+.main_title p {
+    width: 537px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
+    line-height: 150%; 
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.main_title button {
+    background:  #AE7B3C;
+    box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+    padding: 22px 56px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    color:  #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; 
+}
+.main_title button:hover {
+    background:  #865416;
+}
+
+.main_pages {
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow_images {
+    display: flex;
+    gap: 25px;
+}
+
+.arrow_images img {
+    cursor: pointer;
+}
+
+.pages {
+    display: flex;
+    gap: 15px;
+}
+
+.pages a {
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    padding: 8px 11px;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+}
+
+    /* Cards styles */
+.cards_secton {
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards:last-child {
+    border-right: 1px solid rgba(40, 43, 34, 0.3);
+}
+
+.cards_secton h1 {
+    text-align: center;
+    color: #282B22;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.profession_card {
+    padding: 0px 30px;
+    border-left: 1px solid rgba(40, 43, 34, 0.3);
+}
+
+.profession_card span {
+    color: #282B22;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 24px */
+    opacity: 0.5;
+}
+
+.profession_card h2 {
+    color:  #3D4A39;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; 
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
